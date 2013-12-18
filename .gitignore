@@ -1,0 +1,29 @@
+.DS_*
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+.sass-cache
+.tmp
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+config.json
+
+bower_components
+
+# build directories
+/www/
+/build/
+
+# temporary / working directories
+/working/
+
