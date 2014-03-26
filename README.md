@@ -1,8 +1,6 @@
 Static Template
 ===============
 
-A template for quickly creating static sites with Zurb Foundation and Knockout JS.
-
 Usage
 -----
 
@@ -12,35 +10,32 @@ Usage
 - Install [NodeJS](http://nodejs.org)
 - Install [Bower](http://bower.io/) with `npm install -g bower`
 
-### Setting up your project
+### Building the Site
 
-1. Clone the source:  
-`git clone https://github.com/fardog/static_template.git my_project_name`
-2. Remove the git repo, and initialize a new one:  
-`cd my_project_name && rm -rf .git && git init .`
-3. Once your project is set up, install the necessary components:  
-`npm install && bower install`
+> **Warning:** The site's build scripts will overwrite anything in the `_dev` or `_site` directories, without any warning whatsoever. Similarly, the `assets/js` and `assets/css` directories should be considered forfeit as well: the SCSS and JS compilation scripts overwrite stuff in there!
 
-### Creating your site
+Before you get started, get your prerequisites installed:
 
-The default Gruntfile will have you working with just a few files; you can always include more if necessary, but this template is designed for creating one-page sites with [Jade](http://jade-lang.com/), [SASS](http://sass-lang.com/), [Knockout](http://knockoutjs.com/), and [RetinaJS](http://retinajs.com/).
+```cli
+npm install -g grunt-cli
+npm install -g bower
 
-The following files are relevant for creating a quick site:
+cd <project_directory>
+npm install
+bower install
+```
 
-- `src/index.jade` — Will be processed into your `index.html` file.
-- `src/app.scss` — The primary SCSS which will be included in your `app.css` file, after Zurb Foundation's.
-- `src/_settings.scss` — The settings file for Zurb foundation, where you can change its defaults.
-- `src/app.js` — Your primary Javascript file, which will be included in your `app.min.js` file after Zurb Foundation, jQuery, etc.
+There are two build targets: `dev`, and `deploy`.
 
-### Using the build scripts
+#### Running the Development Server
 
-**Warning:** The build scripts will overwrite, without any sort of warning, all of the contents of the `/build/` and `/www/` directories. You should consider these directories to be volatile, and keep nothing in them. All files should come out of your `/src/` directory.
+The provided Gruntfile gives you a local copy of the site, running on http://localhost:8002. Run `grunt dev` to build the dev site, and serve it on that address. Changes made to any relevant files will trigger a rebuild and livereload in any browsers you have open to the site.
 
-The following commands are available to you:
+#### Building the Production Site
 
-- `grunt dev` — Build the site in development mode, run a local server, and watch for changes. This will compile SCSS to CSS and create your `index.html` file in the root of your project, which will link to your development javascript and compiled CSS files. If you make any changes to the contents of the `/src/` directory, it will trigger a reload on the development server, which runs on http://localhost:8002/
-- `grunt deploy` — This will build your complete site in the `www` directory, including minimized CSS and Javascript which are ready for deployment. All files that are included in the `src/img/` directory will automatically be copied to their places in `www`.
+The production site is build by issuing a `grunt deploy`. Then, commit your changes to the `gh-pages` branch, or your `master` branch if this is your github.io page.
 
+**Note:** Although Github's Jekyll will be building your site, you still need to run the `grunt deploy` script to generate minimized assets for your site!
 
 The MIT License (MIT)
 ---------------------
