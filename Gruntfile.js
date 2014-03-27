@@ -50,13 +50,7 @@ module.exports = function (grunt) {
       },
     },
     create_directories: {
-      build: ['assets/img', 'assets/css', 'assets/js'],
-      www: ['assets/img', 'assets/css', 'assets/js']
-    },
-    clean: {
-      build: "build",
-      www: "www",
-      tmp: [".sass-cache"]
+      assets: ['assets/img', 'assets/css', 'assets/js']
     },
     watch: {
       files: ['_src/*', '_layouts/*', '**/*.html', 'index.html', '**/_posts/*', '!_dev/**',],
@@ -102,8 +96,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', ['copy:dev', 'sass:dev']);
   grunt.registerTask('dev', [
-    'clean:build',
-    'create_directories:build',
+    'create_directories',
     'copy:dev',
     'sass:dev',
     'jekyll:dev',
@@ -111,11 +104,10 @@ module.exports = function (grunt) {
     'watch'
   ]);
   grunt.registerTask('deploy', [
-    'clean:www',
-    'create_directories:www',
+    'create_directories',
     'sass:deploy',
     'uglify:deploy',
-    'copy:deploy',
+    'jekyll:deploy'
   ]);
   grunt.registerMultiTask('create_directories', 'Created directory hierarchy.', function() {
     console.log('Creating directories for ' + this.target);

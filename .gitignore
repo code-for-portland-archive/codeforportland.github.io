@@ -26,5 +26,5 @@ bower_components
 
 # temporary / working directories
 /working/
-/_site/
-/_dev/
+_site
+_dev

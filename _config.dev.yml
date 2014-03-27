@@ -5,7 +5,7 @@ exclude: [node_modules, '*.json', 'Gemfile*', 'Gruntfile.*']
 permalink: /:categories/:year/:month/:title
 paginate: 10
 
-modernizr: "bower_components/modernizr/modernizr.js"
+modernizr: "/bower_components/modernizr/modernizr.js"
 js:
   - '/bower_components/jquery/dist/jquery.min.js'
   - '/bower_components/retina.js/src/retina.js'

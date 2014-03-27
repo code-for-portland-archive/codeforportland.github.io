@@ -2,6 +2,9 @@ name: Code for Portland
 markdown: redcarpet
 pygments: true
 exclude: [node_modules, bower_components, '*.json', 'Gemfile*', 'Gruntfile.*']
+permalink: /:categories/:year/:month/:title
+paginate: 10
+
 modernizr: "/assets/js/modernizr.min.js"
 js:
   - "/assets/js/app.min.js"
