@@ -9,6 +9,8 @@ module.exports = function (grunt) {
 		'bower_components/retina.js/src/retina.js',
 		'bower_components/knockout.js/knockout.js',
 		'bower_components/foundation/js/foundation/foundation.js',
+    'bower_components/foundation/js/foundation/foundation.topbar.js',
+    'bower_components/foundation/js/foundation/foundation.orbit.js',
 		'assets/js/app.js'
 	];
 
@@ -20,81 +22,36 @@ module.exports = function (grunt) {
 		uglify: {
 			deploy: {
 				files: {
-					'www/assets/js/modernizr.min.js': modernizr,
-					'www/assets/js/app.min.js': jsFiles
+					'assets/js/modernizr.min.js': modernizr,
+					'assets/js/app.min.js': jsFiles
 				}
 			}
 		},
 		sass: {
 			dev: {
 				files: {
-					'build/assets/css/app.css': 'src/app.scss'
+					'assets/css/app.css': '_src/app.scss'
 				}
 			},
 			deploy: {
 				files: {
-					'www/assets/css/app.min.css': 'src/app.scss'
+					'assets/css/app.min.css': '_src/app.scss'
 				},
 				options: {
 					style: 'compressed'
 				}
 			}
 		},
-		jade: {
-			deploy: {
-				options: {
-					data: {
-						modernizr: 'assets/js/modernizr.min.js',
-						js: ['assets/js/app.min.js'],
-						css: ['assets/css/app.min.css']
-					}
-				},
-				files: [
-					{
-						expand: true,
-						cwd: 'src/',
-						src: ['*.jade'],
-						dest: 'www/',
-						ext: '.html'
-					}
-				]
-			},
-			dev: {
-				options: {
-					data: {
-						modernizr: modernizr,
-						js: jsFiles,
-						css: ['assets/css/app.css']
-					},
-					pretty: true
-				},
-				files: [
-					{
-						expand: true,
-						cwd: 'src/',
-						src: ['*.jade'],
-						dest: 'build/',
-						ext: '.html'
-					}
-				]
-			}
-		},
 		copy: {
 			dev: {
 				files: [
-					{expand: true, cwd: 'src/', src: ['*.js'], dest: 'build/assets/js/', filter: 'isFile'},
-					{expand: true, cwd: 'src/', src: ['img/*'], dest: 'build/assets/img/', filter: 'isFile'}
-				]
-			},
-			deploy: {
-				files: [
-					{expand: true, cwd: 'src/', src: ['img/*'], dest: 'www/assets/img/', filter: 'isFile'}
+					{expand: true, cwd: '_src/', src: ['*.js'], dest: 'assets/js/', filter: 'isFile'}
 				]
 			},
 		},
 		create_directories: {
-			build: ['build/assets/img', 'build/assets/css', 'build/assets/js'],
-			www: ['www/assets/img', 'www/assets/css', 'www/assets/js']
+			build: ['assets/img', 'assets/css', 'assets/js'],
+			www: ['assets/img', 'assets/css', 'assets/js']
 		},
 		clean: {
 			build: "build",
@@ -102,8 +59,8 @@ module.exports = function (grunt) {
 			tmp: [".sass-cache"]
 		},
 		watch: {
-			files: ['src/*'],
-			tasks: ['copy:dev', 'sass:dev', 'jade:dev'],
+			files: ['_src/*', '_layouts/*', '**/*.html', 'index.html', '**/_posts/*', '!_dev/**',],
+			tasks: ['copy:dev', 'sass:dev', 'jekyll:dev'],
 			options: {
 				livereload: true
 			}
@@ -112,29 +69,44 @@ module.exports = function (grunt) {
 			all: {
 				options: {
 					port: 8002,
-					base: [path.join(__dirname, 'build'), __dirname],
+					base: [path.join(__dirname, '_dev')],
 					livereload: true
 				}
 			}
-		}
+		},
+    jekyll: {
+      dev: {
+        options: {
+          config: "_config.dev.yml",
+          bundleExec: true,
+          dest: "_dev"
+        }
+      },
+      deploy: {
+        options: {
+          config: "_config.yml",
+          bundleExec: true
+        }
+      }
+    }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-jekyll');
 
 
-	grunt.registerTask('default', ['copy:dev', 'sass:dev', 'jade:dev']);
+	grunt.registerTask('default', ['copy:dev', 'sass:dev']);
 	grunt.registerTask('dev', [
 		'clean:build',
 		'create_directories:build',
 		'copy:dev',
 		'sass:dev',
-		'jade:dev',
+    'jekyll:dev',
 		'connect',
 		'watch'
 	]);
@@ -143,7 +115,6 @@ module.exports = function (grunt) {
 		'create_directories:www',
 		'sass:deploy',
 		'uglify:deploy',
-		'jade:deploy',
 		'copy:deploy',
 	]);
 	grunt.registerMultiTask('create_directories', 'Created directory hierarchy.', function() {

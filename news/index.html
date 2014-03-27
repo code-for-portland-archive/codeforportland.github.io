@@ -1,0 +1,15 @@
+---
+layout: default
+title: News | Code for Portland
+heading: News
+group: navigation
+---
+
+{% assign posts = site.categories.news %}
+
+<h1 id="news">News</h2>
+
+{% for post in posts %}
+  {% include post.html %}
+{% endfor %}
+

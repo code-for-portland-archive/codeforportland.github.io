@@ -1,0 +1,14 @@
+---
+layout: default
+title: Meeting Notes | Code for Portland
+heading: Meeting Notes
+group: navigation
+---
+
+{% assign posts = site.categories.meeting-notes %}
+
+<h1 id="meeting-notes">Meeting Notes</h2>
+
+{% for post in posts %}
+  {% include post.html %}
+{% endfor %}

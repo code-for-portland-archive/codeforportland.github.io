@@ -9,8 +9,37 @@
 // @include at2x($path, [option] $ext: "jpg", [optional] $width: auto, [optional] $height: auto);
 @import '../bower_components/retina.js/src/_retina.scss';
 
+// import jekyll's default syntax highlighting
+@import 'syntax';
+
 // Define all your styles past this line.
-h1 {
+$lightGrey: rgba(0, 0, 0, 0.5);
+$lighterGrey: rgba(0, 0, 0, 0.4);
+$lightestGrey: rgba(0, 0, 0, 0.1);
+
+section#header {
+	margin-bottom: 1em;
+
+	.orbit-caption {
+		text-align: right;
+		width: auto;
+
+		a {
+			color: rgb(240, 240, 240);
+		}
+	}
+}
+
+footer {
+	color: $lighterGrey;
+
+	a {
+		color: $lightGrey;
+	}
+
+	p, li {
+		font-size: rem-calc(14);
+	}
 }
 
 // Media Queries matched to Foundation's
