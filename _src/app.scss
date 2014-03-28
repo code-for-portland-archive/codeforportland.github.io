@@ -42,6 +42,12 @@ footer {
 	}
 }
 
+article {
+	.meta {
+		font-size: 0.8rem;
+	}
+}
+
 // Media Queries matched to Foundation's
 @media #{$screen} {
 }

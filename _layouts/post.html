@@ -4,8 +4,14 @@ layout: default
 
 <div class="row">
   <article class="medium-8 medium-centered columns">
-    <h2>{{ page.title }}</a> <small>{{ page.date | date_to_string }}</h2>
+    <h2>{{ page.title }}</h2>
     {{ content }}
+    <div class="meta">
+      Posted: {{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %} in 
+      {% for category in page.categories %}
+      <a href="/{{ category | lowercase }}/">{{ category }}</a>{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    </div>
   </article>
 </div>
 
