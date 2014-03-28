@@ -1,10 +1,10 @@
 {
-  "name": "PROJECT_NAME",
+  "name": "codeforportland.github.io",
   "version": "0.0.1",
   "authors": [
     "Nathan Wittstock <code@fardogllc.com>"
   ],
-  "description": "PROJECT_DESCRIPTION",
+  "description": "gh-pages site for Code for Portland",
   "main": "assets/css/app.css",
   "license": "MIT",
   "private": true,
@@ -15,9 +15,11 @@
     "test",
     "tests"
   ],
-	"dependencies": {
-		"foundation": "^5.2.0",
-		"knockout.js": "^3.0.0",
-		"retina.js": "^1.2.0"
-	}
+  "dependencies": {
+    "jquery": "^1.11.0",
+    "foundation": "^4.3.0",
+    "knockout.js": "^3.0.0",
+    "retina.js": "^1.2.0",
+    "modernizr": "~2.7.2"
+  }
 }
