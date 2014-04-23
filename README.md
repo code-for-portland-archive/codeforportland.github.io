@@ -9,8 +9,9 @@ Usage
 ### Build Prerequisites
 
 - Install [Git](http://git-scm.com/)
-- Install [NodeJS](http://nodejs.org)
-- Install [Bower](http://bower.io/) with `npm install -g bower`
+- Install [NodeJS](http://nodejs.org) (v0.10.26+ and NPM v1.4.4+)
+- Install [Bower](http://bower.io/) with `npm install -g bower` (v1.3.2+)
+- Install [Jekyll](https://help.github.com/articles/using-jekyll-with-pages)
 
 ### Building the Site
 
