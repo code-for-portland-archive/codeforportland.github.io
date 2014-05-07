@@ -40,6 +40,10 @@ The production site is build by issuing a `grunt deploy`. Then, commit your chan
 
 > **Note:** Although Github's Jekyll will be building your site, you still need to run the `grunt deploy` script to generate minimized assets for your site!
 
+## Specifications
+
+- Photos for the main page should be 3840 × 1200 for Retina displays, and 1920 × 600
+
 The MIT License (MIT)
 ---------------------
 
