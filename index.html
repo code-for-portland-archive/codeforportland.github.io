@@ -1,40 +1,73 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Code for Portland</title>
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/assets/css/base.css">
-</head>
-<body>
+---
+layout: home
+title: Code for Portland | A Code for America Brigade in Portland, Oregon
+---
 
-  <div id="wrap">
-
-    <div class="page-header">
-      <div class="container">
-        <h1>
-          <a class="title" href="/">Code for Portland</a>
-        </h1>
-        <small class="text-muted">A Code for America Brigade in Portland, Oregon</small>
+<div id="home">
+  <section id="header">
+    <ul class="homepage-slider" data-orbit data-options="timer_speed:5000;
+        slide_number:false;
+        pause_on_hover:true;
+        resume_on_mouseout:true;
+        animation_speed 500;
+        stack_on_small:false;
+        navigation_arrows:true;
+        caption_class:'orbit-caption';
+        bullets:false;
+        circular:true;
+        timer:true;
+        variable_height:false;
+        swipe:true;">
+      <li data-orbit-slide="slide-1">
+        <img src="/assets/img/header_1.jpg" alt="Portland Skyline" />
+        <div class="orbit-caption"><a href="http://www.flickr.com/photos/microwavedboy/5189765853/">Portland Skyline</a> by <a href="http://www.flickr.com/photos/microwavedboy/">microwavedboy</a></div>
+      </li>
+      <li data-orbit-slide="slide-2">
+        <img src="/assets/img/header_2.jpg" alt="Portland Bike Parking" />
+        <div class="orbit-caption"><a href="http://www.flickr.com/photos/88364173@N00/3805279532/">Portland Bike Parking</a> by <a href="http://www.flickr.com/photos/88364173@N00/">Beach650</a></div>
+      </li>
+    </ul>
+  </section>
+  <section id="callouts" class="row leader-1 trailer-2">
+    <div class="large-4 columns">
+      <div class="panel">
+        <h2>Come to a Meetup</h2>
+        <p>Get involved, or just come to see what we're up to. Coming to a Meetup is a great way to see what we're all about!</p>
+        <a href="http://www.meetup.com/Code-for-Portland/" class="small button">View details &raquo;</a>
       </div>
     </div>
-
-    <div class="container">
-      <h2>Coming Soon!</h2>
+    <div class="large-4 columns">
+      <div class="panel">
+        <h2>Join the Conversation</h2>
+        <p>You can find us on <a href="https://groups.google.com/forum/?hl=en#!forum/code-for-portland">Google Groups</a> and on Freenode IRC <a href="http://webchat.freenode.net/?channels=codeforportland&uio=d4">#codeforportland</a>. Come join in the discussion, or bring your own topics; it's all out in the open!</p>
+        <a class="small button" href="https://groups.google.com/forum/?hl=en#!forum/code-for-portland">Join in &raquo;</a>
+      </div>
     </div>
-
-  </div>
-
-  <div id="footer">
-    <div class="container">
-      <p class="text-muted pull-right social">
-        <a href="https://twitter.com/CodeForPortland" class="fa fa-twitter-square"> twitter</a> &nbsp;
-        <a href="https://github.com/CodeForPortland" class="fa fa-github-square"> github</a> &nbsp;
-        <a href="https://groups.google.com/forum/#!forum/code-for-portland" class="fa fa-envelope"> mailing list</a>
-      </p>
+    <div class="large-4 columns">
+      <div class="panel">
+        <h2>Why We're Here</h2>
+        <p>Code for Portland is a <a href="http://brigade.codeforamerica.org/">Code for America Brigade</a>. We're uniting hackers with the city, and working on projects that make a difference in our communities.</p>
+        <a class="small button" href="http://brigade.codeforamerica.org/">Learn More &raquo;</a>
+      </div>
     </div>
-  </div>
-</body>
-</html>
+  </section>
+  <section class="row">
+    <div class="large-7 columns">
+      <h3>Latest News</h3>
+      <hr>
+      {% for post in site.categories.news limit:3 %}
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <time>{{ post.date | date: "%B %Y" }}</time>
+        {{ post.excerpt }}
+      {% endfor %}
+    </div>
+    <div class="large-offset-1 large-4 columns">
+      <h4>Meeting Notes</h4>
+      <hr>
+      {% for post in site.categories.meeting-notes limit:3 %}
+        <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+        <time>{{ post.date | date: "%B %Y" }}</time>
+      {% endfor %}
+    </div>
+  </section>
+</div>

@@ -1,0 +1,9 @@
+<div class="row">
+  <article class="large-8 large-centered columns">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.content }}
+    <div class="meta">
+      Posted: {{ post.date | date_to_string }} {% if post.author %} by {{ post.author }} {% endif %}
+    </div>
+  </article>
+</div>

@@ -1,0 +1,19 @@
+name: Code for Portland
+markdown: redcarpet
+pygments: true
+exclude: [node_modules, '*.json', 'Gemfile*', 'Gruntfile.*']
+permalink: /:categories/:year/:month/:title
+paginate: 10
+
+modernizr: "/bower_components/modernizr/modernizr.js"
+js:
+  - '/bower_components/jquery/dist/jquery.min.js'
+  - '/bower_components/retina.js/src/retina.js'
+  - '/bower_components/knockout.js/knockout.js'
+  - '/bower_components/foundation/js/foundation/foundation.js'
+  - '/bower_components/foundation/js/foundation/foundation.topbar.js'
+  - '/bower_components/foundation/js/foundation/foundation.orbit.js'
+  - '/assets/js/app.js'
+css: 
+  - 'http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic,700italic'
+  - '/assets/css/app.css'

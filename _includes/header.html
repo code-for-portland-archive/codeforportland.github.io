@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{{ page.title }}</title>
+<meta name="viewport" content="width=device-width">
+
+<script type="text/javascript" src="{{ site.modernizr }}"></script>
+
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+  <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+  <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+<![endif]-->
+
+{% for css in site.css %}
+<link href='{{ css }}' rel='stylesheet' type='text/css'>
+<!--[if lt IE 9]>
+<link href="/assets/ie8/app.css" rel='stylesheet' type='text/css'>
+<![endif]-->
+{% endfor %}
+
+</head>
+<body>
+
+<nav class="top-bar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/">{{ site.name }}</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <li><a href="/news/">News</a></li>
+      <li><a href="/meeting-notes/">Meeting Notes</a></li>
+    </ul>
+  </section>
+</nav>
