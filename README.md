@@ -8,10 +8,13 @@ Usage
 
 ### Build Prerequisites
 
-- Install [Git](http://git-scm.com/)
-- Install [NodeJS](http://nodejs.org) (v0.10.26+ and NPM v1.4.4+)
-- Install [Bower](http://bower.io/) with `npm install -g bower` (v1.3.2+)
-- Install [Jekyll](https://help.github.com/articles/using-jekyll-with-pages)
+- [Git](http://git-scm.com/)
+- [NodeJS](http://nodejs.org) (v0.10.26+ and NPM v1.4.4+)
+  - [Bower](http://bower.io/) with `npm install -g bower` (v1.3.2+)
+  - [Grunt](http://gruntjs.com) with `npm install -g grunt-cli`
+- [Ruby](https://www.ruby-lang.org/en/) (Follow this [Guide](https://help.github.com/articles/using-jekyll-with-pages))
+  - [Bundler](http://bundler.io) with `gem install bundler`
+    - [Jekyll](http://jekyllrb.com) with `bundle install` in the working directory
 
 ### Building the Site
 
@@ -20,19 +23,30 @@ Usage
 Before you get started, get your prerequisites installed:
 
 ```cli
+# With a working npm install
 npm install -g grunt-cli
 npm install -g bower
+
+# With a working gem install
+gem install bundler
 
 cd <project_directory>
 npm install
 bower install
+bundle install
 ```
 
 There are two build targets: `dev`, and `deploy`.
 
 #### Running the Development Server
 
-The provided Gruntfile gives you a local copy of the site, running on http://localhost:8002. Run `grunt dev` to build the dev site, and serve it on that address. Changes made to any relevant files will trigger a rebuild and livereload in any browsers you have open to the site.
+The provided Gruntfile gives you a local copy of the site, running on `http://localhost:8002`. Run 
+
+```
+grunt dev
+``` 
+
+to build the dev site, and serve it on that address. Changes made to any relevant files will trigger a rebuild and livereload in any browsers you have open to the site.
 
 #### Building the Production Site
 
