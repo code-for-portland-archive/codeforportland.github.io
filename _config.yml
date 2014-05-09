@@ -1,7 +1,7 @@
 name: Code for Portland
 markdown: redcarpet
 pygments: true
-exclude: [node_modules, bower_components, '*.json', 'Gemfile*', 'Gruntfile.*']
+exclude: [node_modules, bower_components, vendor, '*.json', 'Gemfile*', 'Gruntfile.*']
 permalink: /:categories/:year/:month/:title
 paginate: 10
 
