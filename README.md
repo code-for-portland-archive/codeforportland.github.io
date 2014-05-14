@@ -1,6 +1,8 @@
 Code for Portland
 =================
 
+[![Build Status](https://travis-ci.org/CodeForPortland/codeforportland.github.io.svg?branch=master)](https://travis-ci.org/CodeForPortland/codeforportland.github.io)
+
 Repo for the homepage of Code for Portland, a Code for America brigade based in Portland, Oregon.
 
 Usage
