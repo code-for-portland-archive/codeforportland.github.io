@@ -5378,3 +5378,13 @@ footer {
 
 article .meta {
   font-size: 0.8rem; }
+
+.side-note {
+  color: darkgray;
+  font-size: 0.8rem;
+  font-style: italic; }
+  .side-note a {
+    color: lightskyblue; }
+
+.img-wrap {
+  float: left; }
