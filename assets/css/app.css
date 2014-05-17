@@ -5390,3 +5390,8 @@ article .meta {
   float: left;
   margin-right: 15px;
   margin-top: 10px; }
+
+.img-wrap-left {
+  float: right;
+  margin-left: 15px;
+  margin-top: 10px; }
