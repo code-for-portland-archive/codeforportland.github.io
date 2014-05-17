@@ -57,3 +57,25 @@ article {
 	}
 }
 
+.side-note {
+  color: darkgray;
+  font-size: 0.8rem;
+  font-style: italic;
+  a {
+  	color: lightskyblue;
+  }
+}
+
+.img-wrap {
+	float:left;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.img-wrap-left {
+  float:right;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+

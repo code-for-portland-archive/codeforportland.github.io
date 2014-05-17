@@ -1639,7 +1639,6 @@ blockquote p {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -3506,28 +3505,24 @@ label.error {
 
   to {
     -webkit-transform: rotate(360deg); } }
-
 @-moz-keyframes rotate {
   from {
     -moz-transform: rotate(0deg); }
 
   to {
     -moz-transform: rotate(360deg); } }
-
 @-o-keyframes rotate {
   from {
     -o-transform: rotate(0deg); }
 
   to {
     -o-transform: rotate(360deg); } }
-
 @keyframes rotate {
   from {
     transform: rotate(0deg); }
 
   to {
     transform: rotate(360deg); } }
-
 /* Orbit Graceful Loading */
 .slideshow-wrapper {
   position: relative; }
@@ -3610,7 +3605,7 @@ label.error {
     left: 10px;
     font-size: 12px;
     color: white;
-    background: rgba(0, 0, 0, 0);
+    background: transparent;
     z-index: 10; }
     .orbit-container .orbit-slide-number span {
       font-weight: 700;
@@ -4754,7 +4749,14 @@ ul.pagination {
       right: 0%;
       left: auto; }
     div.switch span.custom {
-      display: none !important; }
+      display: none !important; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 0) and (max-device-width: 480px) {
+    div.switch {
+      -webkit-animation: webkitSiblingBugfix infinite 1s; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    div.switch {
+      -webkit-animation: none 0; } }
+@media only screen {
     form.custom div.switch .hidden-field {
       margin-left: auto;
       position: absolute;
@@ -4841,12 +4843,6 @@ ul.pagination {
 
     to {
       position: relative; } } }
-  @media only screen and (-webkit-min-device-pixel-ratio: 0) and (max-device-width: 480px) {
-    div.switch {
-      -webkit-animation: webkitSiblingBugfix infinite 1s; } }
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
-    div.switch {
-      -webkit-animation: none 0; } }
 [data-magellan-expedition] {
   background: white;
   z-index: 50;
@@ -5382,3 +5378,20 @@ footer {
 
 article .meta {
   font-size: 0.8rem; }
+
+.side-note {
+  color: darkgray;
+  font-size: 0.8rem;
+  font-style: italic; }
+  .side-note a {
+    color: lightskyblue; }
+
+.img-wrap {
+  float: left;
+  margin-right: 15px;
+  margin-top: 10px; }
+
+.img-wrap-left {
+  float: right;
+  margin-left: 15px;
+  margin-top: 10px; }
