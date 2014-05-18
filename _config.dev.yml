@@ -14,6 +14,5 @@ js:
   - '/bower_components/foundation/js/foundation/foundation.topbar.js'
   - '/bower_components/foundation/js/foundation/foundation.orbit.js'
   - '/assets/js/app.js'
-css: 
-  - 'http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic,700italic'
+css:
   - '/assets/css/app.css'

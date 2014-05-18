@@ -1,3 +1,6 @@
+// import Oxygen font
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,700,300);
+
 // Import Foundation's normalize
 @import '../bower_components/foundation/scss/normalize.scss';
 // Foundation's settings and functions, if you care to override them.
@@ -26,35 +29,79 @@ $base-line-height: 24px;
 .leader-half  { margin-top:    0.5 * $base-line-height; }
 .trailer-half { margin-bottom: 0.5 * $base-line-height; }
 
-section#header {
-	margin-bottom: 1em;
+@for $i from 0 through 5 {
+  .padding-leader-#{$i}  { padding-top:    $i * $base-line-height; }
+  .padding-trailer-#{$i} { padding-bottom: $i * $base-line-height; }
+}
+.padding-leader-half  { padding-top:    0.5 * $base-line-height; }
+.padding-trailer-half { padding-bottom: 0.5 * $base-line-height; }
 
-	.orbit-caption {
-		text-align: right;
-		width: auto;
+#header {
+  background: #00a04c;
+  border-bottom: 1px solid rgba(0,0,0,.25);
 
-		a {
-			color: rgb(240, 240, 240);
-		}
-	}
+  .top-bar-section ul {
+    background: none;
+  }
+
+  .top-bar-section li {
+    a:not(.button) {
+      background: none;
+      border-left: 1px solid rgba(0,0,0,.25);
+      &:hover {
+        background: rgba(255,255,255,.25);
+      }
+    }
+    &:last-child a:not(.button) {
+      border-right: 1px solid rgba(0,0,0,.25);
+    }
+  }
 }
 
-footer {
-	color: $lighterGrey;
+#callouts {
+  background: #656D78;
+  background: url(/assets/img/header_1.jpg) center top fixed;
+  color: #fff;
+  position: relative;
+  .panel {
+    background: rgba(255,255,255,.95);
+    border: none;
+  }
+  .photo-attribution {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.9);
+    color: #888;
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 0.75em;
+  }
+}
 
-	a {
-		color: $lightGrey;
-	}
+.panel.meeting-notes {
+  background: #fafafa;
+  border-color: #eee;
+}
 
-	p, li {
-		font-size: rem-calc(14);
-	}
+#footer {
+  color: $lighterGrey;
+  background: #eee;
+
+  a {
+    color: $lightGrey;
+  }
+
+  p, li {
+    font-size: rem-calc(14);
+  }
 }
 
 article {
-	.meta {
-		font-size: 0.8rem;
-	}
+  .meta {
+    color: darkgray;
+    font-size: 0.9rem;
+  }
 }
 
 .side-note {
@@ -62,12 +109,12 @@ article {
   font-size: 0.8rem;
   font-style: italic;
   a {
-  	color: lightskyblue;
+    color: lightskyblue;
   }
 }
 
 .img-wrap {
-	float:left;
+  float:left;
   margin-right: 15px;
   margin-top: 10px;
 }
@@ -94,12 +141,12 @@ article {
 /* Gradient transparent - color - transparent */
 
 hr.style-two {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 
 hr.light-blue {
