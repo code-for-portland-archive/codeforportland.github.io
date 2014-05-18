@@ -5408,13 +5408,6 @@ article .meta {
 .dl-horizontal dd {
   margin-left: 120px; }
 
-/* Inset, by Dan Eden */
-hr.style-six {
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-
 /* Gradient transparent - color - transparent */
 hr.style-two {
   border: 0;
@@ -5423,3 +5416,9 @@ hr.style-two {
   background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
   background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
   background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
+hr.light-blue {
+  color: #e8f1f4;
+  background-color: #e8f1f4;
+  border-color: #e8f1f4;
+  margin: 30px 0 25px 0; }
