@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Partnership Building with the Portland Development Commission"
+author: "Erica Lauer Vose"
+tags: "Partners"
+excerpt: "We met with Jared Wiener, Software Industry Liaison at PDC, after he reached out to us to talk about a new project the PDC is working on to help people connect with public agencies in Portland."
+---
+
+<a href="http://www.pdc.us/welcome.aspx"><img class="img-wrap" src="/assets/img/pdc.jpg"></a>
+
+We met with Jared Wiener, Software Industry Liaison at PDC, after he reached out to us to talk about a new project the PDC is working on to help people connect with public agencies in Portland.
+
+While both groups are brand new and in formation, we are still talking and working on finding ways to help each other. There are all kinds of possibilities in the air!
+
+The Portland Development Commission has been a driving force in Portland’s reputation for vibrancy and livability. As Portland’s urban renewal and economic development agency, PDC focuses on investing in the job creation, innovation and economic opportunity that will transform Portland into one of the world’s most desirable and equitable cities.
+
+<p class="side-note">
+  Want to help with partnership building? It’s easy to get involved: <a href="https://groups.google.com/forum/#!forum/code-for-portland">join the google group</a>
+</p>

@@ -1,6 +1,0 @@
----
-layout: post
-title: "Website Launch"
----
-
-Welcome to our website, there will be news posted shortly.
