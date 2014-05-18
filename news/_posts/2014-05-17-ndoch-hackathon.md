@@ -8,9 +8,10 @@ excerpt: "The <a href=\"http://hackforchange.org/events/national-day-of-civic-ha
 
 <a href="http://hackforchange.org/events/national-day-of-civic-hacking-northwest-hack-a-thon/"><img class="img-wrap" style="margin-bottom: 10px;" src="/assets/img/NationalDayofCivicHacking-Header2.jpg"></a>
 
-The <a href="http://hackforchange.org/events/national-day-of-civic-hacking-northwest-hack-a-thon/">National Day of Civic Hacking</a> is a nationwide event to build innovative civic projects planned in coordination with the White House Office of Science and Technology Policy (OSTP) and will be supported by a number of federal, state and local agencies.
+The [National Day of Civic Hacking](http://hackforchange.org/events/national-day-of-civic-hacking-northwest-hack-a-thon/) is a nationwide event to build innovative civic projects planned in coordination with the [White House Office of Science and Technology Policy](http://www.whitehouse.gov/administration/eop/ostp) (OSTP) and will be supported by a number of federal, state and local agencies.
 
-<h2><small>Kick-off Party</small></h2>
+### Kick-off Party
+
 Portland is hosting two Civic Hackathons in celebration of this national day. Join us for a joint kick-off event to celebrate, get inspired, and hear more about each hackathon. There’s all kinds of dreaming, creating, and hacking you can be part of!
 
 <dl class="dl-horizontal">
@@ -25,7 +26,7 @@ Portland is hosting two Civic Hackathons in celebration of this national day. Jo
 
 <hr class="style-two">
 
-<a href="http://www.meetup.com/Code-for-Portland/events/183102122/"><h2><small>Northwest Hackathon</small></h2></a>
+### [Northwest Hackathon](http://www.meetup.com/Code-for-Portland/events/183102122/)
 
 Portland’s Northwest Hackathon will focus on direct collaboration with nonprofits, public agencies, and organizations in Portland. Sit down with the people serving our community and help them solve the tough problems and address the needs they face everyday. See your work have real-world impact right before your eyes and help build a lasting community that is passionate about finding technological solutions to shared problems in our city.
 
@@ -50,7 +51,7 @@ The Northwest Hackathon is hosted by Code for Portland, a brigade of Code for Am
 
 <hr class="style-two">
 
-<h2><small>Southwest Hackathon</small></h2>
+### Southwest Hackathon
 
 Portland’s Southwest Hackathon will focus on better planning of urban areas. Join us in imagining what our Portland of the future will look like with new models of innovation, community, and economic development. Bring your ideas and be part of the creative innovation that makes Portland unique.
 
@@ -64,5 +65,3 @@ The Southwest Hackathon is sponsored by Intel and hosted at Zidell Yards in Sout
   <dd>Zidell Yards, 3121 SW Moody Ave.</dd>
   <dd><a href="http://hackforpdx.org">More info about this hackathon</a></dd>
 </dl>
-
-

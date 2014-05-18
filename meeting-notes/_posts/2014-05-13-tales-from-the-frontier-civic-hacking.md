@@ -14,5 +14,5 @@ title: "Tales from the Frontier of Civic Hacking"
 
 ## Links
 
-- opendefinition.org
-- government.github.com
+- [opendefinition.org](http://opendefinition.org)
+- [government.github.com](http://government.github.com)

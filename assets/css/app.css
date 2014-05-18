@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,700,300);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -369,7 +370,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Oxygen", helvetica, arial, sans;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -1416,7 +1417,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Oxygen", helvetica, arial, sans;
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -5361,23 +5362,94 @@ a.th {
 .trailer-half {
   margin-bottom: 12px; }
 
-section#header {
-  margin-bottom: 1em; }
-  section#header .orbit-caption {
-    text-align: right;
-    width: auto; }
-    section#header .orbit-caption a {
-      color: #f0f0f0; }
+.padding-leader-0 {
+  padding-top: 0px; }
 
-footer {
-  color: rgba(0, 0, 0, 0.4); }
-  footer a {
+.padding-trailer-0 {
+  padding-bottom: 0px; }
+
+.padding-leader-1 {
+  padding-top: 24px; }
+
+.padding-trailer-1 {
+  padding-bottom: 24px; }
+
+.padding-leader-2 {
+  padding-top: 48px; }
+
+.padding-trailer-2 {
+  padding-bottom: 48px; }
+
+.padding-leader-3 {
+  padding-top: 72px; }
+
+.padding-trailer-3 {
+  padding-bottom: 72px; }
+
+.padding-leader-4 {
+  padding-top: 96px; }
+
+.padding-trailer-4 {
+  padding-bottom: 96px; }
+
+.padding-leader-5 {
+  padding-top: 120px; }
+
+.padding-trailer-5 {
+  padding-bottom: 120px; }
+
+.padding-leader-half {
+  padding-top: 12px; }
+
+.padding-trailer-half {
+  padding-bottom: 12px; }
+
+#header {
+  background: #00a04c;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
+  #header .top-bar-section ul {
+    background: none; }
+  #header .top-bar-section li a:not(.button) {
+    background: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.25); }
+    #header .top-bar-section li a:not(.button):hover {
+      background: rgba(255, 255, 255, 0.25); }
+  #header .top-bar-section li:last-child a:not(.button) {
+    border-right: 1px solid rgba(0, 0, 0, 0.25); }
+
+#callouts {
+  background: #656D78;
+  background: url(/assets/img/header_1.jpg) center top fixed;
+  color: #fff;
+  position: relative; }
+  #callouts .panel {
+    background: rgba(255, 255, 255, 0.95);
+    border: none; }
+  #callouts .photo-attribution {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #888;
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 0.75em; }
+
+.panel.meeting-notes {
+  background: #fafafa;
+  border-color: #eee; }
+
+#footer {
+  color: rgba(0, 0, 0, 0.4);
+  background: #eee; }
+  #footer a {
     color: rgba(0, 0, 0, 0.5); }
-  footer p, footer li {
+  #footer p, #footer li {
     font-size: 0.875rem; }
 
 article .meta {
-  font-size: 0.8rem; }
+  color: darkgray;
+  font-size: 0.9rem; }
 
 .side-note {
   color: darkgray;

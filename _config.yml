@@ -9,5 +9,4 @@ modernizr: "/assets/js/modernizr.min.js"
 js:
   - "/assets/js/app.min.js"
 css:
-  - 'http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700|Ubuntu:400,700,400italic,700italic'
-  - '/assets/css/app.min.css' 
+  - '/assets/css/app.min.css'
