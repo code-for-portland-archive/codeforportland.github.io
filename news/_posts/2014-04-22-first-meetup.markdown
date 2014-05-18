@@ -2,6 +2,8 @@
 layout: post
 title: "Code for Portland's First Monthly Meetup"
 author: "Erica Lauer Vose"
+tags: "Meetup"
+excerpt: "Code for Portland meetups are for coders and non-coders alike. As long as you're interested in making government more open and building interesting things for our city, you're more than welcome!"
 ---
 
 <img src="/assets/img/cfp-1st-meetup.jpg">

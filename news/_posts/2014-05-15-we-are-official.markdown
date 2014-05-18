@@ -2,6 +2,8 @@
 layout: post
 title: "We're Official!"
 author: "Erica Lauer Vose"
+tags: "Organizing"
+excerpt: "As of this week, we are an Official Brigade of Code for America!"
 ---
 
 <a href="http://codeforamerica.org/brigade/index/Code-for-Portland"><img class="img-wrap" src="/assets/img/cfp-red-logo.jpg"></a>

@@ -2,6 +2,8 @@
 layout: post
 title: "Code for Portland Kick-Off Meeting"
 author: "Erica Lauer Vose"
+tags: "Events"
+excerpt: "What a great first meeting of Code for Portland! There was so much energy and enthusiasm!"
 ---
 
 <img src="/assets/img/cfp-brainstorm-large-group.jpg">

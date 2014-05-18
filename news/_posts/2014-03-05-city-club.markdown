@@ -2,6 +2,8 @@
 layout: post
 title: "Partnership Building with City Club of Portland"
 author: "Erica Lauer Vose"
+tags: "Partners"
+excerpt: "City Club of Portland is all about bringing together civic-minded people to make Portland a better place to live, work and play, for everyone."
 ---
 
 <a href="http://www.pdxcityclub.com/"><img class="img-wrap" src="/assets/img/cityclub-logo.png"></a>
