@@ -7,8 +7,19 @@ group: navigation
 
 {% assign posts = site.categories.meeting-notes %}
 
-<h1 id="meeting-notes">Meeting Notes</h2>
+<header class="article-header trailer-2">
+  <div class="row">
+    <hgroup class="large-8 large-centered columns padding-leader-2 padding-trailer-2">
+      <h1 class="article-title">Meeting Notes</h1>
+    </hgroup>
+  </div>
+</header>
 
-{% for post in posts %}
-  {% include post.html %}
-{% endfor %}
+<main class="leader-2 trailer-2">
+  {% for post in posts %}
+    {% include post.html %}
+    {% unless forloop.last %}
+    <hr class="leader-3 trailer-2">
+    {% endunless %}
+  {% endfor %}
+</main>
