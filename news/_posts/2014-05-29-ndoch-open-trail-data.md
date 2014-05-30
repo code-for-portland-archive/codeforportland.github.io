@@ -14,18 +14,20 @@ We've got some special guests joining us from San Francisco for this hackathon. 
 
 Trailhead Labs and Code for Portland volunteers have been working with Metro to get trail data ready to work with. There's already been some work done on [conversion tools](https://github.com/codeforamerica/PLATS), and one of our planned projects will involve building trail data visualization tools using the PLATS format. There's a growing [list of ideas for projects](https://github.com/codeforamerica/PLATS/issues?labels=hack+request&page=1&state=open) on GitHub too!
 
+## Join Us!
+
 We're very excited that folks from Code for America and Trailhead Labs are coming up to Portland to work with our city first. Please join us this weekend to work with these folks as well as many others!
 
 ##### NDoCH Kickoff Party Details
 
-* Time: Friday, May 30th, 6 to 9 PM
-* Location: [Epicodus](http://calagator.org/venues/202394035)
-* [Please RSVP](http://www.eventbrite.com/e/kick-off-party-code-for-portland-national-day-of-civic-hacking-tickets-11593744201)
+* **Time**: Friday, May 30th, 6 to 9 PM
+* **Location**: [Epicodus](http://calagator.org/venues/202394035)
+* [Please RSVP!](http://www.eventbrite.com/e/kick-off-party-code-for-portland-national-day-of-civic-hacking-tickets-11593744201)
 
 ##### NDoCH Northwest Hackathon Details
 
-* Time:
+* **Time**:
   * Saturday, May 31st, 10 AM to 5 PM
   * Sunday, June 1st, 10 AM to 3 PM
-* Location: [North](http://calagator.org/venues/202390939)
-* [Please RSVP](http://www.meetup.com/Code-for-Portland/events/183102122/)
+* **Location**: [North](http://calagator.org/venues/202390939)
+* [Please RSVP!](http://www.meetup.com/Code-for-Portland/events/183102122/)
