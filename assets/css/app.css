@@ -5451,6 +5451,8 @@ a.th {
 article .meta {
   color: darkgray;
   font-size: 0.9rem; }
+article ul {
+  margin-left: 1.25em; }
 
 .article-header {
   background: #3BAFDA; }
