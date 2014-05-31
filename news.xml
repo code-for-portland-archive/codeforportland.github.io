@@ -1,0 +1,41 @@
+---
+layout: none
+limit: 10
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+{% if site.url %}
+    {% capture base %}http://{{ site.url }}{% endcapture %}
+{% elsif site.github.url %}
+    {% assign base = site.github.url %}
+{% endif %}
+    <title>{{ site.name }}</title>
+    {% if site.description %}<subtitle>{{ site.description }}</subtitle>{% endif %}
+    <link href="{{ base }}{{ page.url }}" type="application/atom+xml" rel="self"/>
+    <link href="{{ base }}/" rel="alternate" type="text/html"/>
+    <link href="https://pubsubhubbub.superfeedr.com" rel="hub"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ base }}/</id>
+    <author>
+        <name>{{ site.name }}</name>
+        <uri>{{ base }}</uri>
+    </author>
+
+    {% for post in site.posts limit: page.limit %}
+    <entry>
+        <title>{{ post.title | xml_escape }}</title>
+        <link href="{{ base }}{{ post.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>{{ base }}{{ post.id }}</id>
+        {% if post.author.name or post.author.email or post.author.url %}
+        <author>
+            {% if post.author.name %}<name>{{ post.author.name }}</name>{% endif %}
+            {% if post.author.email %}<email>{{ post.author.email }}</email>{% endif %}
+            {% if post.author.url %}<uri>{{ post.author.url }}</uri>{% endif %}
+        </author>
+        {% endif %}
+        <category term="{{ post.categories }}" />
+        <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endfor %}
+</feed>
