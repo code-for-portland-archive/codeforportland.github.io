@@ -5469,7 +5469,8 @@ article ul {
 .img-wrap {
   float: left;
   margin-right: 15px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .img-wrap-left {
   float: right;
