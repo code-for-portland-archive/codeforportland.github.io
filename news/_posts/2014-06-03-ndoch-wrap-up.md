@@ -70,7 +70,7 @@ Trail Editor enables users to document trailheads in the field by taking a photo
 
 Project repos:
 
-* [github.com/CodeForPortland/ces\_json\_api](https://github.com/CodeForPortland/ces_json_api)
+* [github.com/CodeForPortland/ces-open-data](https://github.com/CodeForPortland/ces-open-data)
 * [github.com/CodeForPortland/ces-json-datamaker](https://github.com/CodeForPortland/ces-json-datamaker)
 
 [CES](http://www.pdx.edu/ces/home) is a non-profit, housed within Portland State, that does research and program work on waste and recycling topics. They currently have some 25 years of quantitative data, all in spreadsheets and 17 current projects that are generating more data all the time.
