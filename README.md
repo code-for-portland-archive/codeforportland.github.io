@@ -14,7 +14,7 @@ Adding pages and posts is easy!  Just fork the repository and add and edit away.
 Jekyll Only Development Environment
 ----
 
-If you plan on just writing blog posts or create pages without editing any JS or CSS assets, you can preview the site locally with a working copy of Ruby and Bundler. Follow this guide to get Jekyll running locally: [help.github.com/articles/using-jekyll-with-pages](https://help.github.com/articles/using-jekyll-with-pages)
+If you plan on just writing blog posts or create pages without editing any JS or CSS assets, you can preview the site locally with a working copy of Ruby and Bundler. Follow this guide to get Jekyll running locally: [help.github.com/articles/using-jekyll-with-pages](https://help.github.com/articles/using-jekyll-with-pages#installing-jekyll)
 
 Once you have that working you can preview the website by running the following command in the website directory:
 
