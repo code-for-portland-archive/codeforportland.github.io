@@ -85,6 +85,12 @@ At the Hackathon, we looked at a bunch of documents and pieced together what dat
 
 The next step is to build a front end for data visualization and put it on a map using Lloyd Ecodistrict GIS data we got from our Metro representative. Our group also had a great time working together, everyone came with a different language background and we got to learn together and work together and figure out how to do ruby and frontend all together. There was a lot of great teamwork with everyone teaching each other.
 
+### Personal Projects
+
+- [Mele Sax-Barnett](http://pdxmele.com) finished a map containing [pedalpalooza](http://www.shift2bikes.org/cal/) events.  It shows the location and details of each event and allows you to filter events by date.
+  - [Pedalpalooza Map](http://pdxmele.com/ppalooz-map/)
+  - Project repo: [github.com/pdxmele/ppalooz-map](https://github.com/pdxmele/ppalooz-map)
+
 ### Never stop hacking
 
 See you all next time! We'll keep having hack nights monthly, so if you can't make it on the 17th, don't worry, you can catch up in July.
