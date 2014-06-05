@@ -11,7 +11,7 @@ Make Edits in your Browser
 Adding pages and posts is easy!  Just fork the repository and add and edit away.  New to Jekyll?  [Read up on creating post files](http://jekyllrb.com/docs/posts/#creating-post-files) and [check out an existing post](/news/_posts/2014-06-03-ndoch-wrap-up.md) to find the correct front-matter variables.
 
 
-Jekyll Only Development Environment
+Previewing Website Changes Locally
 ----
 
 If you plan on just writing blog posts or create pages without editing any JS or CSS assets, you can preview the site locally with a working copy of Ruby and Bundler. Follow this guide to get Jekyll running locally: [help.github.com/articles/using-jekyll-with-pages](https://help.github.com/articles/using-jekyll-with-pages#installing-jekyll)
