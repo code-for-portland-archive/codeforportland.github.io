@@ -5,8 +5,28 @@ Code for Portland
 
 Repo for the homepage of Code for Portland, a Code for America brigade based in Portland, Oregon.
 
-Usage
+Make Edits in your Browser
 -----
+
+Adding pages and posts is easy!  Just fork the repository and add and edit away.  New to Jekyll?  [Read up on creating post files](http://jekyllrb.com/docs/posts/#creating-post-files) and [check out an existing post](/news/_posts/2014-06-03-ndoch-wrap-up.md) to find the correct front-matter variables.
+
+
+Previewing Website Changes Locally
+----
+
+If you plan on just writing blog posts or create pages without editing any JS or CSS assets, you can preview the site locally with a working copy of Ruby and Bundler. Follow this guide to get Jekyll running locally: [help.github.com/articles/using-jekyll-with-pages](https://help.github.com/articles/using-jekyll-with-pages#installing-jekyll)
+
+Once you have that working you can preview the website by running the following command in the website directory:
+
+```cli
+~ $ jekyll serve --watch
+# => Now browse to http://localhost:4000
+```
+
+Full Development Environment
+-----
+
+The site's CSS and JS is compiled and minified using SASS and Grunt.  If you want to edit these asses you must set up a full Node.js + Ruby + Grunt + Sass + Jekll development environment.
 
 ### Build Prerequisites
 
