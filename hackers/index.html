@@ -54,7 +54,7 @@ group: navigation
             }
         </style>
         <div class="template" id="skill-filter-template">
-            <div class="left skill"><a class="skill-link" href="#">${skill}</a></div>
+            <div class="left skill"><a data-filter="${skill}" class="skill-link" href="#">${skill}</a></div>
         </div>
 
         <div class="template" id="hacker-template">
@@ -74,13 +74,18 @@ group: navigation
 
         hackerDirectory.initData = function(hackers)
         {
+
             hackers
                     .map(function (hacker, index, array) {
                         hackerDirectory.hackers.push(hacker);
                         return hacker["skills"];
                     }, self)
                     .reduce(function (previousValue, currentValue, index, array) {
-                        return previousValue.concat(currentValue.name);
+                        return previousValue.concat(currentValue.filter(function(element){
+                            return previousValue.every(function(e){
+                                return  element.name != e.name;
+                            });
+                        }));
                     })
                     .sort(function(a, b){
                         return a.name < b.name ? -1 : 1;
@@ -99,7 +104,7 @@ group: navigation
 
         hackerDirectory.addSkill = function(skill)
         {
-            $("#skill-list").append($(hackerDirectory.skillTemplate.html().replace("${skill}", skill.name)).clone());
+            $("#skill-list").append($(hackerDirectory.skillTemplate.html().replace(/\${skill}/g, skill.name)).clone());
         };
 
         hackerDirectory.fetchHackerData = function()
@@ -124,24 +129,37 @@ group: navigation
         {
             hackerDirectory.clearHackers();
             hackerDirectory.hackers
-                    .sort(function(a, b){
+                    .sort(function (a, b) {
                         return a.name < b.name ? -1 : 1;
                     })
-                    .filter(function(value, index, array){
+                    .filter(function (value, index, array) {
                         return hackerDirectory.matchesFilters(value);
-                    }, self)
-                    .forEach(function (value, index, array){
+                    })
+                    .forEach(function (value, index, array) {
                         hackerDirectory.addHackerToView(value);
                     });
         };
 
         hackerDirectory.addHackerToView = function(hacker)
         {
-            $("#hacker-list").append($(hackerDirectory.hackerTemplate.html().replace("${name}", hacker.name)).clone());
+            $("#hacker-list").append($(hackerDirectory.hackerTemplate.html().replace(/\${name}/g, hacker.name)).clone());
         };
 
-        hackerDirectory.matchesFilters = function(hacker){
-            return true;
+        hackerDirectory.matchesFilters = function (hacker) {
+
+            if (Object.keys(hackerDirectory.enabledFilters).length == 0)
+            {
+                return true;
+            }
+            var matchingSkills = hacker["skills"]
+                    .map(function (skill) {
+                        return skill.name;
+                    })
+                    .filter(function (skillName) {
+                        var matches = hackerDirectory.enabledFilters[skillName] == true;
+                        return matches;
+                    });
+            return matchingSkills.length > 0;
         };
 
         hackerDirectory.clearHackers = function(){
@@ -151,10 +169,23 @@ group: navigation
         hackerDirectory.bindEvents = function(){
             $("#skill-list").on("click", ".skill-link", function(){
                 $(this).toggleClass("selected");
+
+                var filter = $(this).attr("data-filter");
+
+                if ($(this).hasClass("selected"))
+                {
+                    hackerDirectory.enabledFilters[filter] = true;
+                }
+                else
+                {
+                    delete hackerDirectory.enabledFilters[filter];
+                }
                 hackerDirectory.filterHackers();
                 return false;
             });
         };
+
+        hackerDirectory.enabledFilters = {};
 
         $(document).ready(function(){
             hackerDirectory.fetchHackerData();

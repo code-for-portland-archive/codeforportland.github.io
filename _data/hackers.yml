@@ -24,7 +24,6 @@
       level: Novice
     - name: HTML
       level: Experienced
-
 - name: Bob the Bob
   skills:
     - name: PERL
@@ -33,3 +32,7 @@
       level: Experienced
     - name: Java
       level: Intermediate
+- name: Johnny Fox
+  skills:
+    - name: VB
+      level: Expert
