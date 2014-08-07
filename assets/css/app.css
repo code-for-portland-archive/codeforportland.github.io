@@ -5519,3 +5519,19 @@ hr.light-blue {
 
 .hacker {
   margin-top: 5px; }
+
+.hacker-details {
+  display: none; }
+
+.hacker-details-showing {
+  display: block; }
+
+.hacker-details {
+  list-style-type: none; }
+
+.hacker table {
+  border: none;
+  margin-left: 1em; }
+
+.hacker table td {
+  padding: .2em; }
