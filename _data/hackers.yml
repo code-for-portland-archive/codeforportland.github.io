@@ -6,16 +6,10 @@
       level: Experienced
     - name: Scala
       level: Intermediate
-    - name: Haskell
-      level: Novice
-    - name: Ruby
-      level: Intermediate
     - name: Objective C
       level: Intermediate
     - name: SQL
       level: Experienced
-    - name: Clojure
-      level: Novice
     - name: Gradle
       level: Novice
     - name: Maven
@@ -26,6 +20,13 @@
       level: Experienced
     - name: C#
       level: Intermediate
+    - name: Application Security
+      level: Experienced
+    - name: Linux
+      level: Experienced
+    - name: MacOS
+      level: Experienced
+#TODO: delete these fake users once there are real users
 - name: Bob the Bob
   skills:
     - name: PERL
