@@ -147,19 +147,21 @@ group: navigation
 
         hackerDirectory.matchesFilters = function (hacker) {
 
-            if (Object.keys(hackerDirectory.enabledFilters).length == 0)
-            {
+            if (Object.keys(hackerDirectory.enabledFilters).length == 0) {
                 return true;
             }
-            var matchingSkills = hacker["skills"]
-                    .map(function (skill) {
-                        return skill.name;
+            return Object.keys(hackerDirectory.enabledFilters)
+                    .filter(function (key) {
+                        return hackerDirectory.enabledFilters[key] == true;
                     })
-                    .filter(function (skillName) {
-                        var matches = hackerDirectory.enabledFilters[skillName] == true;
-                        return matches;
+                    .every(function (filterName) {
+                        var matchingSkills = hacker["skills"].filter(function (f) {
+                            if (f.name == filterName) {
+                                return true;
+                            }
+                        });
+                        return matchingSkills.length > 0;
                     });
-            return matchingSkills.length > 0;
         };
 
         hackerDirectory.clearHackers = function(){

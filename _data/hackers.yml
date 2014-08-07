@@ -24,6 +24,8 @@
       level: Novice
     - name: HTML
       level: Experienced
+    - name: C#
+      level: Intermediate
 - name: Bob the Bob
   skills:
     - name: PERL
