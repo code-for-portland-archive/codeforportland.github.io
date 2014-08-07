@@ -16,7 +16,7 @@ group: navigation
     <div class="row">
         <article class="large-8 large-centered columns">
             <p>
-                Click the skills below to filter.
+                Click the skills below to filter (multiple is a Boolean "and"). Click the hacker's name to see details.
             </p>
             <div id="skill-list">
 
@@ -32,167 +32,32 @@ group: navigation
         </article>
     </div>
 </main>
-        <style>
-            .skill {
-                padding: 2px;
-                background-color: #aaffaa;
-                margin: 5px;
-                border-radius: 5px;
-            }
 
-            .template
-            {
-                display: none;
-            }
-
-            .selected {
-                border-bottom: dashed 2px darkgreen;
-            }
-
-            .hacker {
-                margin-top: 5px;
-            }
-        </style>
         <div class="template" id="skill-filter-template">
             <div class="left skill"><a data-filter="${skill}" class="skill-link" href="#">${skill}</a></div>
         </div>
 
         <div class="template" id="hacker-template">
             <div class="hacker">
-                <div class="hacker-name">${name}</div>
+                <div class="hacker-name"><a class="hacker-link" href="#">${name}</a></div>
+                <table>
+                    <tbody class="hacker-details">
+
+                    </tbody>
+                </table>
+
             </div>
         </div>
 
+        <table>
+            <tbody class="template" id="hacker-details-skill">
+                <tr class="hacker-details-skill">
+                    <td class="hacker-details-skill-name">${name}</td>
+                    <td class="hacker-details-skill-level">${level}</td>
+                </tr>
+            </tbody>
+        </table>
+
 <script type="text/javascript" src="/assets/js/app.min.js"></script>
-        <!-- TODO: break js and CSS into separate files -->
-<script>
+<script type="text/javascript" src="/assets/js/hacker-list.min.js"></script>
 
-    (function($){
-        var hackerDirectory = hackerDirectory || {};
-
-        hackerDirectory.hackers = [];
-
-        hackerDirectory.initData = function(hackers)
-        {
-
-            hackers
-                    .map(function (hacker, index, array) {
-                        hackerDirectory.hackers.push(hacker);
-                        return hacker["skills"];
-                    }, self)
-                    .reduce(function (previousValue, currentValue, index, array) {
-                        return previousValue.concat(currentValue.filter(function(element){
-                            return previousValue.every(function(e){
-                                return  element.name != e.name;
-                            });
-                        }));
-                    })
-                    .sort(function(a, b){
-                        return a.name < b.name ? -1 : 1;
-                    })
-                    .forEach(function (value, index, array) {
-                        if (value != undefined)
-                        {
-                            hackerDirectory.addSkill(value);
-                        }
-                    }, self);
-            hackerDirectory.filterHackers();
-        };
-
-        hackerDirectory.skillTemplate = $("#skill-filter-template");
-        hackerDirectory.hackerTemplate = $("#hacker-template");
-
-        hackerDirectory.addSkill = function(skill)
-        {
-            $("#skill-list").append($(hackerDirectory.skillTemplate.html().replace(/\${skill}/g, skill.name)).clone());
-        };
-
-        hackerDirectory.fetchHackerData = function()
-        {
-            $.ajax({
-                        url: "/hackers/hackers.html",
-                        dataType: "json",
-                        success: function (data, status, xhr) {
-                            hackerDirectory.initData(data);
-                        },
-                        error: function(xhr, status, error){
-                            //TODO: error handling
-                            console.log("xhr: " + xhr);
-                            console.log("status: " + status);
-                            console.log("error: " + error);
-                        }
-                    }
-            );
-        };
-
-        hackerDirectory.filterHackers = function()
-        {
-            hackerDirectory.clearHackers();
-            hackerDirectory.hackers
-                    .sort(function (a, b) {
-                        return a.name < b.name ? -1 : 1;
-                    })
-                    .filter(function (value, index, array) {
-                        return hackerDirectory.matchesFilters(value);
-                    })
-                    .forEach(function (value, index, array) {
-                        hackerDirectory.addHackerToView(value);
-                    });
-        };
-
-        hackerDirectory.addHackerToView = function(hacker)
-        {
-            $("#hacker-list").append($(hackerDirectory.hackerTemplate.html().replace(/\${name}/g, hacker.name)).clone());
-        };
-
-        hackerDirectory.matchesFilters = function (hacker) {
-
-            if (Object.keys(hackerDirectory.enabledFilters).length == 0) {
-                return true;
-            }
-            return Object.keys(hackerDirectory.enabledFilters)
-                    .filter(function (key) {
-                        return hackerDirectory.enabledFilters[key] == true;
-                    })
-                    .every(function (filterName) {
-                        var matchingSkills = hacker["skills"].filter(function (f) {
-                            if (f.name == filterName) {
-                                return true;
-                            }
-                        });
-                        return matchingSkills.length > 0;
-                    });
-        };
-
-        hackerDirectory.clearHackers = function(){
-            $("#hacker-list").html("");
-        };
-
-        hackerDirectory.bindEvents = function(){
-            $("#skill-list").on("click", ".skill-link", function(){
-                $(this).toggleClass("selected");
-
-                var filter = $(this).attr("data-filter");
-
-                if ($(this).hasClass("selected"))
-                {
-                    hackerDirectory.enabledFilters[filter] = true;
-                }
-                else
-                {
-                    delete hackerDirectory.enabledFilters[filter];
-                }
-                hackerDirectory.filterHackers();
-                return false;
-            });
-        };
-
-        hackerDirectory.enabledFilters = {};
-
-        $(document).ready(function(){
-            hackerDirectory.fetchHackerData();
-            hackerDirectory.bindEvents();
-        });
-    })(jQuery);
-
-</script>

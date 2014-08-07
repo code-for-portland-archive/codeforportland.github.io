@@ -13,6 +13,9 @@ module.exports = function (grunt) {
     'bower_components/foundation/js/foundation/foundation.orbit.js',
     'assets/js/app.js'
   ];
+  var hackerListJSFiles = [
+      'assets/js/hacker-list.js'
+  ];
 
   var cssFiles = [
     'assets/css/app.css'
@@ -23,7 +26,8 @@ module.exports = function (grunt) {
       deploy: {
         files: {
           'assets/js/modernizr.min.js': modernizr,
-          'assets/js/app.min.js': jsFiles
+          'assets/js/app.min.js': jsFiles,
+          'assets/js/hacker-list.min.js': hackerListJSFiles
         }
       }
     },

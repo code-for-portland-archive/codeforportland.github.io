@@ -5503,3 +5503,19 @@ hr.light-blue {
   background-color: #e8f1f4;
   border-color: #e8f1f4;
   margin: 30px 0 25px 0; }
+
+/** Support for hacker directory **/
+.skill {
+  padding: 2px;
+  background-color: #aaffaa;
+  margin: 5px;
+  border-radius: 5px; }
+
+.template {
+  display: none; }
+
+.selected {
+  border-bottom: dashed 2px darkgreen; }
+
+.hacker {
+  margin-top: 5px; }
