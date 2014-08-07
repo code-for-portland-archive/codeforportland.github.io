@@ -1,0 +1,165 @@
+---
+layout: default
+title: Hacker Directory | Code for Portland
+heading: Hacker Directory
+group: navigation
+---
+<header class="article-header">
+    <div class="row">
+        <hgroup class="large-8 large-centered columns padding-leader-2 padding-trailer-2">
+            <h1 class="article-title">Hacker Directory</h1>
+        </hgroup>
+    </div>
+</header>
+
+<main class="leader-2 trailer-2">
+    <div class="row">
+        <article class="large-8 large-centered columns">
+            <p>
+                Click the skills below to filter.
+            </p>
+            <div id="skill-list">
+
+            </div>
+        </article>
+     </div>
+    <div class="row">
+        <article class="large-8 large-centered columns">
+            <h3>Matching Hackers</h3>
+            <div id="hacker-list">
+
+            </div>
+        </article>
+    </div>
+</main>
+        <style>
+            .skill {
+                padding: 2px;
+                background-color: #aaffaa;
+                margin: 5px;
+                border-radius: 5px;
+            }
+
+            .template
+            {
+                display: none;
+            }
+
+            .selected {
+                border-bottom: dashed 2px darkgreen;
+            }
+
+            .hacker {
+                margin-top: 5px;
+            }
+        </style>
+        <div class="template" id="skill-filter-template">
+            <div class="left skill"><a class="skill-link" href="#">${skill}</a></div>
+        </div>
+
+        <div class="template" id="hacker-template">
+            <div class="hacker">
+                <div class="hacker-name">${name}</div>
+            </div>
+        </div>
+
+<script type="text/javascript" src="/assets/js/app.min.js"></script>
+        <!-- TODO: break js and CSS into separate files -->
+<script>
+
+    (function($){
+        var hackerDirectory = hackerDirectory || {};
+
+        hackerDirectory.hackers = [];
+
+        hackerDirectory.initData = function(hackers)
+        {
+            hackers
+                    .map(function (hacker, index, array) {
+                        hackerDirectory.hackers.push(hacker);
+                        return hacker["skills"];
+                    }, self)
+                    .reduce(function (previousValue, currentValue, index, array) {
+                        return previousValue.concat(currentValue.name);
+                    })
+                    .sort(function(a, b){
+                        return a.name < b.name ? -1 : 1;
+                    })
+                    .forEach(function (value, index, array) {
+                        if (value != undefined)
+                        {
+                            hackerDirectory.addSkill(value);
+                        }
+                    }, self);
+            hackerDirectory.filterHackers();
+        };
+
+        hackerDirectory.skillTemplate = $("#skill-filter-template");
+        hackerDirectory.hackerTemplate = $("#hacker-template");
+
+        hackerDirectory.addSkill = function(skill)
+        {
+            $("#skill-list").append($(hackerDirectory.skillTemplate.html().replace("${skill}", skill.name)).clone());
+        };
+
+        hackerDirectory.fetchHackerData = function()
+        {
+            $.ajax({
+                        url: "/hackers/hackers.html",
+                        dataType: "json",
+                        success: function (data, status, xhr) {
+                            hackerDirectory.initData(data);
+                        },
+                        error: function(xhr, status, error){
+                            //TODO: error handling
+                            console.log("xhr: " + xhr);
+                            console.log("status: " + status);
+                            console.log("error: " + error);
+                        }
+                    }
+            );
+        };
+
+        hackerDirectory.filterHackers = function()
+        {
+            hackerDirectory.clearHackers();
+            hackerDirectory.hackers
+                    .sort(function(a, b){
+                        return a.name < b.name ? -1 : 1;
+                    })
+                    .filter(function(value, index, array){
+                        return hackerDirectory.matchesFilters(value);
+                    }, self)
+                    .forEach(function (value, index, array){
+                        hackerDirectory.addHackerToView(value);
+                    });
+        };
+
+        hackerDirectory.addHackerToView = function(hacker)
+        {
+            $("#hacker-list").append($(hackerDirectory.hackerTemplate.html().replace("${name}", hacker.name)).clone());
+        };
+
+        hackerDirectory.matchesFilters = function(hacker){
+            return true;
+        };
+
+        hackerDirectory.clearHackers = function(){
+            $("#hacker-list").html("");
+        };
+
+        hackerDirectory.bindEvents = function(){
+            $("#skill-list").on("click", ".skill-link", function(){
+                $(this).toggleClass("selected");
+                hackerDirectory.filterHackers();
+                return false;
+            });
+        };
+
+        $(document).ready(function(){
+            hackerDirectory.fetchHackerData();
+            hackerDirectory.bindEvents();
+        });
+    })(jQuery);
+
+</script>

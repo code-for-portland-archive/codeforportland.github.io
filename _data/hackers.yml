@@ -1,0 +1,35 @@
+- name: Daniel Somerfield
+  skills:
+    - name: Java
+      level: Expert
+    - name: C++
+      level: Experienced
+    - name: Scala
+      level: Intermediate
+    - name: Haskell
+      level: Novice
+    - name: Ruby
+      level: Intermediate
+    - name: Objective C
+      level: Intermediate
+    - name: SQL
+      level: Experienced
+    - name: Clojure
+      level: Novice
+    - name: Gradle
+      level: Novice
+    - name: Maven
+      level: Intermediate
+    - name: sbt
+      level: Novice
+    - name: HTML
+      level: Experienced
+
+- name: Bob the Bob
+  skills:
+    - name: PERL
+      level: Expert
+    - name: C#
+      level: Experienced
+    - name: Java
+      level: Intermediate
