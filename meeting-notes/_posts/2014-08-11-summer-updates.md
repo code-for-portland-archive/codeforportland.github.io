@@ -11,15 +11,15 @@ Want to help out with organizing? Just drop us a line on Twitter [@codeforportla
 
 ## Code for Portland Organizers Meeting Notes (8/4/2014)
 
-### 1. Code of Conduct  
+### 1. Code of Conduct
 There was an issue with someone being treated poorly at the last meeting. We've resolved to (a) follow up with a verbal warning, and (b) make sure to mention the Code of Conduct more explicitly at the beginning of every meeting. A [Github issue](https://github.com/CodeForPortland/organizers/issues/17) was created for (b). We also agreed to make a point about asking people not to wander around the office by themselves because someone was doing that.
 
 ### 2. We've decided to switch our Code of Conduct over to a fork of the new Code for America code of conduct. See [issue #14](https://github.com/CodeForPortland/organizers/issues/14) for more info.
 
-### 3. Municipal Partner  
+### 3. Municipal Partner
 Preston mentioned he had a ticket available for [CfA Summit](http://codeforamerica.org/summit/) (Sep 23-25) that we could offer to a city official which might lead to building a partnership with them. We talked about a few ideas for potential people to talk to and invite.
 
-### 4. Defining a user need as part of project startup  
+### 4. Defining a user need as part of project startup
 We discussed how there haven't been many projects brought forward with a well-defined need, and how a dataset isn't really enough for a good starting point. Part of the conversation we had with [James Keller of Walmart Labs](https://twitter.com/semaphoria) was that there are a good number of UX people at her meetups that would be interested here. Nate W. is going to see if she can make it to our next meeting so we can start to have discussions about defining need as part of project launches.
 
 ### 5. CfA Brigade site template
@@ -33,11 +33,8 @@ Nate G. proposed building a set of repos meant to be forkable and replicable for
 - Avenues for (Transportation) Advocacy - [Lillian Karabaic](https://twitter.com/anomalily) stopped by looking for volunteers. She thinks it should be about 12 hours of work for 4 people, Saturday work, beer provided!
 - The Hack Oregon crew continues to work hard on their projects.
 
-### 7. August Hack Night  
+### 7. August Hack Night
 Next hack night is August 19th. Nate W. is checking with NORTH to see if they can host (and will know by August 5); otherwise ESRI is the fallback. We should have our Code of Conduct updated by then so we can launch at that event.
-
-### 8. Blog post
-We need a blog post/update. Let's publish this as meeting notes!
 
 --
 
@@ -48,5 +45,3 @@ We need a blog post/update. Let's publish this as meeting notes!
 3. Reach out to Fred Miller about financial data/CfA summit/partnership (Nate G)
 4. Start documenting CfA brigade site template (Nate G)
 5. Revise meeting format to help newcomers (ongoing)
-6. Publish update post for July, probably just our meeting notes (Mele)
-7. Anything else? Check in with project leaders as we have the chance?
