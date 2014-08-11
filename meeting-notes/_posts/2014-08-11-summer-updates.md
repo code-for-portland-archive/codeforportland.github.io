@@ -5,7 +5,7 @@ title: "Summer Updates"
 
 Time can slip away very quickly during a beautiful Portland summer. Your organizers have been busy, though! Nate G. has been traveling around and speaking at conferences, Erica and Nate W. spoke on a panel for the Grantmakers of Oregon, and Erica also gave a talk at [PDXTech4Good](http://www.meetup.com/pdxtech4good-nonprofit-activist-tech/). What else is going on? Read our most recent organizer's meeting notes below to find out.
 
-Want to help out with organizing? Just drop us a line on Twitter [@codeforportland](https://twitter.com/codeforportland) or on our Google group.
+Want to help out with organizing? Just drop us a line on Twitter [@codeforportland](https://twitter.com/codeforportland) or on [our Google group](https://groups.google.com/forum/#!forum/code-for-portland).
 
 --
 
