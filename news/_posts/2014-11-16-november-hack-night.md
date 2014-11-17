@@ -34,6 +34,9 @@ We hope to see you this Tuesday! After a few short presentations we'll get to ou
 
 * Date: Tuesday, November 18, 2014
 * Time: 6:00 PM to 9:00 PM
+* Place: [Esri Portland R&D Center](http://calagator.org/venues/202394387)
+
+More event details are available on the [meetup page](http://www.meetup.com/Code-for-Portland/events/213494252/).
 
 ### Psst.. help us out!
 
