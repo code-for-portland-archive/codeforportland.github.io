@@ -28,3 +28,7 @@ bower_components
 /working/
 _site
 _dev
+
+#IDE files
+.idea/
+*.iml

@@ -1,0 +1,63 @@
+---
+layout: default
+title: Hacker Directory | Code for Portland
+heading: Hacker Directory
+group: navigation
+---
+<header class="article-header">
+    <div class="row">
+        <hgroup class="large-8 large-centered columns padding-leader-2 padding-trailer-2">
+            <h1 class="article-title">Hacker Directory</h1>
+        </hgroup>
+    </div>
+</header>
+
+<main class="leader-2 trailer-2">
+    <div class="row">
+        <article class="large-8 large-centered columns">
+            <p>
+                Click the skills below to filter (multiple is a Boolean "and"). Click the hacker's name to see details.
+            </p>
+            <div id="skill-list">
+
+            </div>
+        </article>
+     </div>
+    <div class="row">
+        <article class="large-8 large-centered columns">
+            <h3>Matching Hackers</h3>
+            <div id="hacker-list">
+
+            </div>
+        </article>
+    </div>
+</main>
+
+        <div class="template" id="skill-filter-template">
+            <div class="left skill"><a data-filter="${skill}" class="skill-link" href="#">${skill}</a></div>
+        </div>
+
+        <div class="template" id="hacker-template">
+            <div class="hacker">
+                <div class="hacker-name"><a class="hacker-link" href="#">${name}</a></div>
+                <table>
+                    <tbody class="hacker-details">
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <table>
+            <tbody class="template" id="hacker-details-skill">
+                <tr class="hacker-details-skill">
+                    <td class="hacker-details-skill-name">${name}</td>
+                    <td class="hacker-details-skill-level">${level}</td>
+                </tr>
+            </tbody>
+        </table>
+
+<script type="text/javascript" src="/assets/js/app.min.js"></script>
+<script type="text/javascript" src="/assets/js/hacker-list.min.js"></script>
+

@@ -168,3 +168,51 @@ hr.light-blue {
   border-color: #e8f1f4;
   margin: 30px 0 25px 0;
 }
+
+/** Support for hacker directory **/
+.skill {
+  padding: 2px;
+  background-color: #aaffaa;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.template
+{
+  display: none;
+}
+
+.selected {
+  border-bottom: dashed 2px darkgreen;
+}
+
+.hacker {
+  margin-top: 5px;
+}
+
+.hacker-details {
+  display: none;
+}
+
+.hacker-details-showing {
+  display: block;
+}
+
+.hacker-details
+{
+  list-style-type: none;
+}
+
+.hacker table
+{
+  border: none;
+  margin-left: 1em;
+}
+
+.hacker table td
+{
+  padding: .2em;
+}
+
+
+
