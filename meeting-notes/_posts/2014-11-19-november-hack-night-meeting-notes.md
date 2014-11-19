@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "November Hack Night"
+title: "November Hack Night Meeting Notes"
 author: "Nate Goldman"
 ---
-
-# November Hack Night Meeting Notes
 
 We had lots of guests presenting on projects last night!
 
