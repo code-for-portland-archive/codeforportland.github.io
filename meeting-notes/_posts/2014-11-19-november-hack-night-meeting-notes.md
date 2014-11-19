@@ -22,7 +22,7 @@ Fresh from their victory at [Portland Startup Weekend](http://www.bizjournals.co
 
 [Alex](https://twitter.com/alexlinsker) from [Collective Agency](http://collectiveagency.co/) continued his research into the financial specifics necessary to fully fund Pre-K-12 education and end Oregon income taxes by taxing assets over $1.8 million with help with some volunteers. Find out more about the constitutional amendment initiative [here](https://fullyfundoregonschools.org/).
 
---
+---
 
 Thanks to everyone who made it out to the event! Our next hack night is Wednesday, December 10, 2014. Find out more about the event RSVP here: http://www.meetup.com/Code-for-Portland/events/217498582/
 
