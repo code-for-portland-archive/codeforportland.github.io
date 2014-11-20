@@ -24,6 +24,6 @@ Fresh from their victory at [Portland Startup Weekend](http://www.bizjournals.co
 
 ---
 
-Thanks to everyone who made it out to the event! Our next hack night is Wednesday, December 10, 2014. Find out more about the event RSVP here: http://www.meetup.com/Code-for-Portland/events/217498582/
+Thanks to everyone who made it out to the event! Our next hack night is Wednesday, December 10, 2014. Find out more about the event RSVP here: [meetup.com/Code-for-Portland/events/217498582](http://www.meetup.com/Code-for-Portland/events/217498582/)
 
 If you think something's missing from the meeting notes or you have some extra links or resources you'd like to contribute, feel free to [send us an email](info@codeforportland.org), [file an issue](https://github.com/CodeForPortland/codeforportland.github.io/issues), or [open a pull request](https://github.com/CodeForPortland/codeforportland.github.io/pulls)!
