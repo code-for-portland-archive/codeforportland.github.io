@@ -1,12 +1,28 @@
-name: Code for Portland
-markdown: redcarpet
-pygments: true
-exclude: [node_modules, bower_components, vendor, '*.json', 'Gemfile*', 'Gruntfile.*']
-permalink: /:categories/:year/:month/:title
-paginate: 10
+# Dependencies
+markdown:             redcarpet
+highlighter:          pygments
 
-modernizr: "/assets/js/modernizr.min.js"
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:            /:categories/:year/:month/:title
+relative_permalinks:  true
+
+# Setup
+name:                 Code for Portland
+paginate:             10
+
+# Extra
+safe:                 true # replicate gh-pages env
+timezone:             America/Los_Angeles
+encoding:             utf-8
+
+# fix for weird travis-ci build error
+# http://www.markcampbell.me/jekyll/heroku/2013/05/18/how-to-set-up-jekyll-on-heroku.html
+exclude:              ['vendor', 'Gemfile*']
+
+modernizr: '/assets/js/modernizr.min.js'
 js:
-  - "/assets/js/app.min.js"
+  - '/assets/js/app.min.js'
 css:
   - '/assets/css/app.min.css'
