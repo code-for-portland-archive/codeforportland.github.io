@@ -1,6 +1,0 @@
-language: ruby
-before_script:
-  - npm install
-  - bower install
-script:
-  - bundle exec grunt deploy
