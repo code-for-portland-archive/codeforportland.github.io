@@ -2,6 +2,7 @@
 layout: post
 title: "August Hack Night"
 author: Nate Goldman
+category: "meeting-notes"
 excerpt: "Meeting notes for our fifth hack night."
 ---
 

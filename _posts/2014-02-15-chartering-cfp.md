@@ -3,6 +3,7 @@ layout: post
 title: "Chartering Code for Portland"
 author: "Erica Lauer Vose"
 tags: "Organizing"
+category: "meeting-notes"
 excerpt: "We are a bridge between tech, nonprofits, and government agencies. We promote civic hacking and engagement by organizing events, helping teams build projects, and providing an open, collaborative space. We are making our community more awesome."
 ---
 

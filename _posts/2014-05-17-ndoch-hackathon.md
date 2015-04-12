@@ -3,6 +3,7 @@ layout: post
 title: "Hack for Change in Portland: National Day of Civic Hacking"
 author: "Erica Lauer Vose"
 tags: "Events"
+category: news
 excerpt: "The <a href=\"http://hackforchange.org/events/national-day-of-civic-hacking-northwest-hack-a-thon/\">National Day of Civic Hacking</a> is a nationwide event to build innovative civic projects planned in coordination with the White House Office of Science and Technology Policy (OSTP) and will be supported by a number of federal, state and local agencies."
 ---
 

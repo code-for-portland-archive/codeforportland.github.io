@@ -3,6 +3,7 @@ layout: post
 title: "First Hack Night"
 author: "Erica Lauer Vose"
 tags: "Meetup"
+category: "meeting-notes"
 excerpt: "Code for Portland meetups are for coders and non-coders alike. As long as you're interested in making government more open and building interesting things for our city, you're more than welcome!"
 ---
 

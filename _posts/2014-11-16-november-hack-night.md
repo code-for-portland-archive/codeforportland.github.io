@@ -2,6 +2,7 @@
 layout: post
 title: "November Hack Night"
 author: "Nate Goldman"
+category: news
 ---
 
 Hello people of Portland! We've got some guests from various great projects joining us for our monthly hack night this Tuesday. [RSVP on meetup for pizza](http://www.meetup.com/Code-for-Portland/events/213494252/)!

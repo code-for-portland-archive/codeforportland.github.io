@@ -2,6 +2,7 @@
 layout: post
 title: "November Hack Night Meeting Notes"
 author: "Nate Goldman"
+category: "meeting-notes"
 ---
 
 We had lots of guests presenting on projects last night!

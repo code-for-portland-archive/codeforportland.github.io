@@ -3,6 +3,7 @@ layout: post
 title: "Partnership Building with Oregon Volunteers"
 author: "Erica Lauer Vose"
 tags: "Partners"
+category: news
 excerpt: "When considering where to begin with partnership building, I like to seek out the people I admire most. I sat down with a friend and mentor, Kathleen Joy, Executive Director of Oregon Volunteers."
 ---
 

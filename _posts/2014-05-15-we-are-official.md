@@ -3,6 +3,7 @@ layout: post
 title: "We're Official!"
 author: "Erica Lauer Vose"
 tags: "Organizing"
+category: news
 excerpt: "As of this week, we are an Official Brigade of Code for America!"
 ---
 

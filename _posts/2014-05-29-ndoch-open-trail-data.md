@@ -3,6 +3,7 @@ layout: post
 title: "Hacking on Open Trail Data at NDoCH"
 author: Nate Goldman
 tags: NDOCH, PLATS
+category: news
 excerpt: "We're kicking off the second National Day of Civic Hacking this Friday at Epicodus, and we're very excited to share all the projects coming together for this weekend's hackathon!"
 ---
 

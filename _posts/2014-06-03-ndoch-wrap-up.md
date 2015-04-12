@@ -3,6 +3,7 @@ layout: post
 title: "National Day of Civic Hacking Wrap-Up"
 author: Mele Sax-Barnett and Erica Lauer Vose
 tags: NDOCH
+category: news
 excerpt: A huge THANK YOU to everyone who joined us this weekend! As Erica has already said to the project leaders, "I can hardly believe how much we got done, how absolutely stellar the quality of work was, and how much sharing and collaboration and community building we all did!"
 ---
 

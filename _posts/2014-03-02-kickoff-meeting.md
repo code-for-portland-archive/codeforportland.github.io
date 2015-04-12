@@ -3,6 +3,7 @@ layout: post
 title: "Kick-Off Meeting"
 author: "Erica Lauer Vose"
 tags: "Events"
+category: "meeting-notes"
 excerpt: "What a great first meeting of Code for Portland! There was so much energy and enthusiasm!"
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+category: "meeting-notes"
 title: "Tales from the Frontier of Civic Hacking"
 ---
 

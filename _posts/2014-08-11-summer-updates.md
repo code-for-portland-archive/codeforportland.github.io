@@ -1,5 +1,6 @@
 ---
 layout: post
+category: "meeting-notes"
 title: "Summer Updates"
 ---
 
