@@ -6,7 +6,7 @@ Repository for the homepage of Code for Portland. We're a Code for America briga
 
 ## Edit pages in your browser
 
-Adding pages and posts is easy! Just fork the repository and add and edit away. New to Jekyll?  [Read up on creating post files](http://jekyllrb.com/docs/posts/#creating-post-files) and [check out an existing post](/news/_posts/2014-06-03-ndoch-wrap-up.md) to find the correct front-matter variables.
+Adding pages and posts is easy! Just fork the repository and add and edit away. New to Jekyll?  [Read up on creating post files](http://jekyllrb.com/docs/posts/#creating-post-files) and [check out an existing post](_posts/2014-06-03-ndoch-wrap-up.md) to find the correct front-matter variables.
 
 ## View a local copy of the site on your computer
 
