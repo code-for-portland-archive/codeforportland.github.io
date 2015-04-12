@@ -20,7 +20,7 @@ Once you have that working you can preview the website by running the following 
 $ jekyll serve --watch
 ```
 
-You should now be able to see the site in your browser at `http://localhost:4000`. While this command is running, any changes you save to files in the project you should up in your browser if you refresh the page. To stop the server, just press <kbd>control</kbd>+<kbd>c</kbd> in your terminal.
+You should now be able to see the site in your browser at `http://localhost:4000`. While this command is running, any changes you save to files in the project you should up in your browser if you refresh the page. To stop the server, just press <kbd>control</kbd><kbd>c</kbd> in your terminal.
 
 ## License
 
