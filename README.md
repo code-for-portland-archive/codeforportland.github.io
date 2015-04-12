@@ -1,18 +1,16 @@
-Code for Portland
-=================
+# Code for Portland
 
 [![Build Status](https://travis-ci.org/CodeForPortland/codeforportland.github.io.svg?branch=master)](https://travis-ci.org/CodeForPortland/codeforportland.github.io)
 
 Repo for the homepage of Code for Portland, a Code for America brigade based in Portland, Oregon.
 
-Make Edits in your Browser
------
+- [projects](projects) (work in progress)
+
+## Make Edits in your Browser
 
 Adding pages and posts is easy!  Just fork the repository and add and edit away.  New to Jekyll?  [Read up on creating post files](http://jekyllrb.com/docs/posts/#creating-post-files) and [check out an existing post](/news/_posts/2014-06-03-ndoch-wrap-up.md) to find the correct front-matter variables.
 
-
-Previewing Website Changes Locally
-----
+## Previewing Website Changes Locally
 
 If you plan on just writing blog posts or create pages without editing any JS or CSS assets, you can preview the site locally with a working copy of Ruby and Bundler. Follow this guide to get Jekyll running locally: [help.github.com/articles/using-jekyll-with-pages](https://help.github.com/articles/using-jekyll-with-pages#installing-jekyll)
 
@@ -23,8 +21,7 @@ Once you have that working you can preview the website by running the following 
 # => Now browse to http://localhost:4000
 ```
 
-Full Development Environment
------
+## Full Development Environment
 
 The site's CSS and JS is compiled and minified using SASS and Grunt.  If you want to edit these asses you must set up a full Node.js + Ruby + Grunt + Sass + Jekll development environment.
 
@@ -80,25 +77,6 @@ The production site is build by issuing a `grunt deploy`. Then, commit your chan
 
 - Photos for the main page should be 3840 × 1200 for Retina displays, and 1920 × 600
 
-The MIT License (MIT)
----------------------
+## License
 
-Copyright (c) 2014 Nathan Wittstock
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
+[MIT](LICENSE)
