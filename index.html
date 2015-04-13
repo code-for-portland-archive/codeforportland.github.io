@@ -4,39 +4,11 @@ title: Code for Portland | A Code for America Brigade in Portland, Oregon
 ---
 
 <div id="home">
-  <section id="callouts" class="padding-leader-2 padding-trailer-2">
-    <div class="row">
-      <div class="large-4 columns">
-        <div class="panel">
-          <h3>Why We're Here</h3>
-          <p>Code for Portland is a <a href="http://brigade.codeforamerica.org/">Code for America Brigade</a>. We're uniting hackers with the city, and working on projects that make a difference in our communities.</p>
-          <a class="small button" href="http://brigade.codeforamerica.org/">Learn More &raquo;</a>
-        </div>
-      </div>
-      <div class="large-4 columns">
-        <div class="panel">
-          <h3>Join the Conversation</h3>
-          <p>You can find us on <a href="https://groups.google.com/forum/?hl=en#!forum/code-for-portland">Google Groups</a> and on Freenode IRC <a href="http://webchat.freenode.net/?channels=codeforportland&uio=d4">#codeforportland</a>. Come join in the discussion, or bring your own topics; it's all out in the open!</p>
-          <a class="small button" href="https://groups.google.com/forum/?hl=en#!forum/code-for-portland">Join in &raquo;</a>
-        </div>
-      </div>
-      <div class="large-4 columns">
-        <div class="panel">
-          <h3>Come to a Meetup</h3>
-          <p>Get involved, or just come to see what we're up to. Coming to a Meetup is a great way to see what we're all about!</p>
-          <a href="http://www.meetup.com/Code-for-Portland/" class="small button">View details &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="photo-attribution"><a href="http://www.flickr.com/photos/microwavedboy/5189765853/">Portland Skyline</a> by <a href="http://www.flickr.com/photos/microwavedboy/">microwavedboy</a></div>
-  </section>
-
   <section class="row leader-2">
-    <div class="large-6 columns">
+    <div class="large-7  columns">
       <h3><a href="/news/">Latest News</a></h3>
       <hr>
-      {% for post in site.categories.news limit:4 %}
+      {% for post in site.posts limit:5 %}
         <article>
           <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
           <p class="meta">
@@ -54,24 +26,34 @@ title: Code for Portland | A Code for America Brigade in Portland, Oregon
         {% endunless %}
       {% endfor %}
     </div>
-    <div class="large-offset-1 large-5 columns">
-      <div class="panel meeting-notes">
-        <h4><a href="/meeting-notes/">Meeting Notes</a></h4>
-        <hr>
-        {% for post in site.categories.meeting-notes limit:4 %}
-          <article>
-            <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
-            <p class="meta">
-              <time>{{ post.date | date: "%B %-d, %Y" }}</time>
-            </p>
-            <p>
-              {{ post.excerpt }}
-            </p>
-          </article>
-          {% unless forloop.last %}
-          <hr class="light-blue">
-          {% endunless %}
-        {% endfor %}
+
+    <div class="large-offset-1 large-4 columns">
+      <div class="panel">
+        <h3>Why We're Here</h3>
+
+        <p>Code for Portland is a <a href="http://brigade.codeforamerica.org/">Code for America Brigade</a>. We're uniting hackers with the city, and working on projects that make a difference in our communities.</p>
+
+        <a class="small button" href="http://brigade.codeforamerica.org/">Learn More about Brigades &raquo;</a>
+      </div>
+
+      <div class="panel">
+        <h3>Join the Conversation</h3>
+
+        <p>You can find us on <a href="http://twitter.com/CodeForPortland">twitter</a>, <a href="http://webchat.freenode.net/?channels=codeforportland&uio=d4">IRC</a>, and <a href="http://github/CodeForPortland">Github</a>. Come join in the discussion, or bring your own ideas and projects. It's all out in the open!</p>
+
+        <ul class="side-nav">
+          <li><a href="http://twitter.com/CodeForPortland">@CodeForPortland</a></li>
+          <li><a href="http://github.com/CodeForPortland">github.com/CodeForPortland</a></li>
+          <li><a href="http://webchat.freenode.net/?channels=codeforportland&uio=d4">freenode#codeforportland</a></li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>Come to a Meetup</h3>
+
+        <p>Get involved, or just come to see what we're up to. Coming to a Meetup is a great way to see what we're all about!</p>
+
+        <a href="http://www.meetup.com/Code-for-Portland/" class="small button">View Meetup Group &raquo;</a>
       </div>
     </div>
   </section>
