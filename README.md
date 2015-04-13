@@ -2,7 +2,7 @@
 
 Repository for the homepage of Code for Portland. We're a Code for America brigade based in Portland, Oregon.
 
-- [projects](projects) (work in progress)
+- [projects](projects/index.md) (work in progress)
 
 ## Edit pages in your browser
 
