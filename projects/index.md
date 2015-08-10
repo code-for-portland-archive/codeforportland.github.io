@@ -1,4 +1,7 @@
-# Project Directory
+---
+layout: post
+title: "Project Directory"
+---
 
 Please feel free to:
 
