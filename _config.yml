@@ -1,12 +1,8 @@
 # Dependencies
-markdown:             redcarpet
 highlighter:          pygments
 
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:            /:categories/:year/:month/:title
-relative_permalinks:  true
 
 # Setup
 name:                 Code for Portland
@@ -25,4 +21,6 @@ modernizr: '/assets/js/modernizr.min.js'
 js:
   - '/assets/js/app.min.js'
 css:
-  - '/assets/css/app.min.css'
+  - '/assets/css/app.css'
+
+gems: [jekyll-paginate]

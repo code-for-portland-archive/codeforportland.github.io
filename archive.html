@@ -1,23 +1,21 @@
 ---
 layout: default
-title: Meeting Notes | Code for Portland
-heading: Meeting Notes
+title: Archive | Code for Portland
+heading: News
 group: navigation
 ---
-
-{% assign posts = site.categories.meeting-notes %}
 
 <header class="article-header">
   <div class="row">
     <hgroup class="padding-leader-2">
-      <h1 class="article-title">Meeting Notes</h1>
+      <h1 class="article-title">Archive</h1>
     </hgroup>
   </div>
 </header>
 
-<main class="leader-2 trailer-2">
+<main class="leader-1 trailer-2">
   <div class="row">
-  {% for post in posts %}
+  {% for post in site.posts %}
     {% include post.html %}
     {% unless forloop.last %}
     <hr class="light-blue">

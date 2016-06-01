@@ -2,4 +2,9 @@
 
 {{ content }}
 
-{% include footer.html %}
+{% for js in site.js %}
+<script type="text/javascript" src="{{ js }}"></script>
+{% endfor %}
+
+</body>
+</html>

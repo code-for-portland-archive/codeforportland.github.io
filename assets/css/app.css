@@ -5441,8 +5441,7 @@ a.th {
   border-color: #eee; }
 
 #footer {
-  color: rgba(0, 0, 0, 0.4);
-  background: #eee; }
+  color: rgba(0, 0, 0, 0.4); }
   #footer a {
     color: rgba(0, 0, 0, 0.5); }
   #footer p, #footer li {
@@ -5453,11 +5452,6 @@ article .meta {
   font-size: 0.9rem; }
 article ul {
   margin-left: 1.25em; }
-
-.article-header {
-  background: #3BAFDA; }
-  .article-header .article-title {
-    color: #fff; }
 
 .side-note {
   color: darkgray;

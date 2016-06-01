@@ -9,17 +9,19 @@ group: navigation
 
 <header class="article-header">
   <div class="row">
-    <hgroup class="large-8 large-centered columns padding-leader-2 padding-trailer-2">
+    <hgroup class="padding-leader-2">
       <h1 class="article-title">News</h1>
     </hgroup>
   </div>
 </header>
 
-<main class="leader-2 trailer-2">
-  {% for post in posts %}
-    {% include post.html %}
-    {% unless forloop.last %}
-    <hr class="leader-3 trailer-2">
-    {% endunless %}
-  {% endfor %}
+<main class="leader-1 trailer-2">
+  <div class="row">
+    {% for post in posts %}
+      {% include post.html %}
+      {% unless forloop.last %}
+      <hr class="light-blue">
+      {% endunless %}
+    {% endfor %}
+  </div>
 </main>
